@@ -20,7 +20,7 @@ st.sidebar.header("Fonctionnalités d’entrée de l'utilisateur")
 transaction_type_dic = {"CASH_OUT": 1,"PAYMENT": 2,"CASH_IN": 3,"TRANSFER": 4,"DEBIT": 5}
 
 # Collecter les entrées de l'utilisateur
-type = st.sidebar.selectbox("Transaction Type", list(transaction_type_dic.keys()))
+type = st.sidebar.selectbox("Type de transaction", list(transaction_type_dic.keys()))
 amount = st.sidebar.number_input("Montant de la transaction", min_value=0.0, step=1.0)
 oldbalanceOrg = st.sidebar.number_input("Solde de l'expediteur avant transaction", min_value=0.0, step=1.0)
 newbalanceOrig = st.sidebar.number_input("Solde de l'expediteur après transaction ", min_value=0.0, step=1.0)
